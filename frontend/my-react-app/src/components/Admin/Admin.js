@@ -25,7 +25,7 @@ export const Admin = () => {
           image: img3,
           title: 'Add Employee',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          link:`/admindashboard/viewAgent`
+          link:`/admindashboard/addEmployee`
         },
       
         {
@@ -33,21 +33,21 @@ export const Admin = () => {
           image: img2,
           title: 'Add Vendor',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          link:`/admindashboard/viewcustomer`
+          link:`/admindashboard/addVendor`
         },
         {
           id: 4,
           image: img4,
           title: 'View Employees',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          link:`/admindashboard/viewscheme`
+          link:`/admindashboard/viewEmployee`
         },
         {
           id: 5,
           image: img6,
           title: 'View Vendors',
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          link:`/admindashboard/viewemployee`
+          link:`/admindashboard/viewVendor`
         }
       ];
   return (

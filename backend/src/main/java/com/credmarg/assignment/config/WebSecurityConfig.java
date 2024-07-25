@@ -17,17 +17,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
 	private InMemoryUserDetailsManager inMemoryUserDetailsManager;
-	
-	@Bean
-	public PasswordEncoder passwordEncoder()
-	{
-	    return new BCryptPasswordEncoder();
-	}
+//	
+//	@Bean
+//	public PasswordEncoder passwordEncoder()
+//	{
+//	    return new BCryptPasswordEncoder();
+//	}
 
 
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.userDetailsService(inMemoryUserDetailsManager).passwordEncoder(passwordEncoder());
+		auth.userDetailsService(inMemoryUserDetailsManager);
 	}
 
 	@Override

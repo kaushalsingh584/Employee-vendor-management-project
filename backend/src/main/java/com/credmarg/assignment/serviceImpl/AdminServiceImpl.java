@@ -21,9 +21,9 @@ public class AdminServiceImpl implements IAdminService {
 
 	@Autowired
 	private InMemoryUserDetailsManager inMemoryUserDetailsManager;
-	
-	@Autowired
-    private PasswordEncoder passwordEncoder;
+//	
+//	@Autowired
+//    private PasswordEncoder passwordEncoder;
 
 	private Map<String, AdminIO> adminDetailsMap = new HashMap<>();
 

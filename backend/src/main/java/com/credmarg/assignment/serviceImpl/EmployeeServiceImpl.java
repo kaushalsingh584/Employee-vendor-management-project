@@ -31,7 +31,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
 	@Override
 	public EmployeeIO saveEmployee(EmployeeIO employee) {
-		UserDetails user = User.withUsername(employee.getEmail()).password(passwordEncoder.encode(employee.getPassword()))
+		UserDetails user = User.withUsername(employee.getEmail()).password("{noop}"+employee.getPassword())
 				.authorities("EMPLOYEE").build();
 		inMemoryUserDetailsManager.createUser(user);
 		employeeDetailsMap.put(employee.getEmail(), employee);
